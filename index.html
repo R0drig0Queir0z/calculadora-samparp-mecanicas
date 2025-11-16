@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora Mecânica</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h5>ㅤ</h5>
+    </div>
+
+    <div class="container-form">
+        <div id="contaier-left">,
+            <form id="form1">
+                <fieldset>
+                    <legend>Tunagem</legend>
+                    <input type="checkbox" name="valor2" id="tuning" value="150.000" onclick="togglePerformanceOptions()">
+                    <label for="tuning">Full Tuning</label>
+                </fieldset>
+            </form>
+            <form id="form2">
+                <fieldset>
+                    <legend>Pintura e Cores</legend>
+                    <input type="checkbox" name="valor3" id="c" value="6.000" onclick="calcularValor()"><label
+                        for="c">
+                        Cor Primária</label><br>
+                    <input type="checkbox" name="valor3" id="rod" value="6.000" onclick="calcularValor()"><label
+                        for="rod">
+                        Cor Secundária</label><br>
+                    <input type="checkbox" name="valor3" id="f" value="2.600" onclick="calcularValor()"><label
+                        for="f">
+                        Adicional Camaleão</label><br>
+                    <input type="checkbox" name="valor3" id="buz" value="2.600" onclick="calcularValor()"><label
+                        for="buz">
+                        Adicional Perolado</label>
+                </fieldset>
+            </form>
+            <form id="form2b">
+                <fieldset>
+                    <legend>Pneus</legend>
+                    <input type="checkbox" name="valor3" id="a" value="2.400" onclick="calcularValor()"><label
+                        for="a">
+                        Cor do Roda</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="2.400" onclick="calcularValor()"><label
+                        for="fum">
+                        Fumaça Do Pneu</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="2.400" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Comum</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="12.800" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Luxo</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="6.200" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Esportiva</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="10.400" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Importadas</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="12.000" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Lowrider</label><br>      
+                    <input type="checkbox" name="valor3" id="fum" value="11.200" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Off - Road</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="11.200" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Potentes</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="10.400" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Rua</label><br>
+                    <input type="checkbox" name="valor3" id="fum" value="9.600" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Suv</label><br> 
+                    <input type="checkbox" name="valor3" id="fum" value="12.000" onclick="calcularValor()"><label
+                        for="fum">
+                        Categoria Tunning</label> 
+                </fieldset>
+            </form>
+            <form id="form2c">
+                <fieldset>
+                    <legend>Estéticos E Outros</legend>
+                    <input type="checkbox" name="valor3" id="pla" value="10.000" onclick="calcularValor()"><label
+                        for="pla">
+                        Anti Lag</label><br>
+                    <input type="checkbox" name="valor3" id="pai" value="5.000" onclick="calcularValor()"><label
+                        for="pai">
+                        Som Motor</label><br>
+                    <input type="checkbox" name="valor3" id="f2" value="10.000" onclick="calcularValor()"><label
+                        for="f2">
+                        Extras 1</label><br>
+                    <input type="checkbox" name="valor3" id="b" value="8.000" onclick="calcularValor()"><label
+                        for="b">
+                        Extras 2</label><br>
+                    <input type="checkbox" name="valor3" id="b2" value="10.000" onclick="calcularValor()"><label
+                        for="b2">
+                        Extras 3</label><br>
+                    <input type="checkbox" name="valor3" id="d" value="8.000" onclick="calcularValor()"><label
+                        for="d">
+                        Placa</label><br>
+                    <input type="checkbox" name="valor3" id="e" value="15.000" onclick="calcularValor()"><label
+                        for="e">
+                        Insulfilm(Vidro)</label><br>
+                    <input type="checkbox" name="valor3" id="g" value="15.000" onclick="calcularValor()"><label
+                        for="g">
+                        Buzina</label><br>
+                    <input type="checkbox" name="valor3" id="capo" value="8.000" onclick="calcularValor()"><label
+                        for="capo">
+                        Capo</label><br>
+                    <input type="checkbox" name="valor3" id="b2" value="4.000" onclick="calcularValor()"><label
+                        for="b2">
+                        Aerofólio</label><br>
+                    <input type="checkbox" name="valor3" id="d" value="3.000" onclick="calcularValor()"><label
+                        for="d">
+                        Saias-Laterais</label><br>
+                    <input type="checkbox" name="valor3" id="e" value="3.000" onclick="calcularValor()"><label
+                        for="e">
+                        Para-Choque Traseiro</label><br>
+                    <input type="checkbox" name="valor3" id="g" value="3.000" onclick="calcularValor()"><label
+                        for="g">
+                        Para-Choque Dianteiro</label><br>
+                </fieldset>
+            </form>
+        </div>
+        <div id="container-center">
+
+            <form id="form3">
+                <fieldset>
+                    <legend>Luzes</legend>
+                    <input type="checkbox" name="valor3" value="2.400" id="opcao1" onclick="calcularValor()">
+                    <label for="opcao1">Farol</label>
+                    <input type="checkbox" name="valor3" value="2.400" id="opcao2" onclick="calcularValor()">
+                    <label for="opcao2">Neon</label>
+                    <input type="checkbox" name="valor3" value="1.500" id="opcao3" onclick="calcularValor()">
+                    <label for="opcao3">Trocar apenas a cor</label>
+
+                </fieldset>
+            </form>
+            <form id="form6">
+                <fieldset>
+                    <legend>Motor</legend>
+                    <input type="checkbox" class="performance" name="valor3" value="17.000" id="opcao20" onclick="calcularValor()">
+                    <label for="opcao20">Level 3</label>
+                    <input type="checkbox" class="performance" name="valor3" value="34.000" id="opcao21" onclick="calcularValor()">
+                    <label for="opcao21">Level 4</label>
+                    <input type="checkbox" class="performance" name="valor3" value="51.000" id="opcao22" onclick="calcularValor()">
+                    <label for="opcao22">Level 5</label>
+
+                </fieldset>
+            </form>
+
+            <form id="form6">
+                <fieldset>
+                    <legend>Transmissão</legend>
+                    <input type="checkbox" class="performance" name="valor3" value="14.000" id="opcao25" onclick="calcularValor()">
+                    <label for="opcao25">Level 3</label>
+                    <input type="checkbox" class="performance" name="valor3" value="28.000" id="opcao26" onclick="calcularValor()">
+                    <label for="opcao26">Level 4</label>
+
+
+                </fieldset>
+            </form>
+            <form id="form6">
+                <fieldset>
+                    <legend>Freio</legend>
+                    <input type="checkbox" class="performance" name="valor3" value="6.000" id="opcao30" onclick="calcularValor()">
+                    <label for="opcao30">Level 3</label>
+                    <input type="checkbox" class="performance" name="valor3" value="12.000" id="opcao31" onclick="calcularValor()">
+                    <label for="opcao31">Level 4</label>
+                </fieldset>
+            </form>
+            <form id="form6">
+                <fieldset>
+                    <legend>Suspensão</legend>
+                    <input type="checkbox" class="performance" name="valor3" value="14.000" id="opcao35" onclick="calcularValor()">
+                    <label for="opcao35">Level 3</label>
+                    <input type="checkbox" class="performance" name="valor3" value="28.000" id="opcao36" onclick="calcularValor()">
+                    <label for="opcao36">Level 4</label>
+                    <input type="checkbox" class="performance" name="valor3" value="42.000" id="opcao37" onclick="calcularValor()">
+                    <label for="opcao37">Level 5</label>
+
+
+                </fieldset>
+            </form>
+            <form id="form6">
+                <fieldset>
+                    <legend>Blindagem de Lataria</legend>
+                    <input type="checkbox" name="valor3" value="80.000" id="opcao40" onclick="calcularValor()">
+                    <label for="opcao40">Blindagem 3</label>
+                    <input type="checkbox" name="valor3" value="160.000" id="opcao40" onclick="calcularValor()">
+                    <label for="opcao40">Blindagem 4</label><br>
+                    <input type="checkbox" name="valor3" value="240.000" id="opcao40" onclick="calcularValor()">
+                    <label for="opcao40">Blindagem 5</label>
+                    <input type="checkbox" name="valor3" value="360.000" id="opcao40" onclick="calcularValor()">
+                    <label for="opcao40">Blindagem 6</label>                     
+
+                </fieldset>
+            </form>
+            <form id="form6">
+                <fieldset>
+                    <legend>Blindagem de Pneu</legend>
+                    <input type="checkbox" name="valor3" value="99000.000" id="opcao41" onclick="calcularValor()">
+                    <label for="opcao41">Adicionar</label>       
+
+                </fieldset>    
+            </form>
+            <div class="row">
+                <form id="form6">
+                    <fieldset>
+                        <legend>Outros</legend>
+                        <input type="checkbox" class="performance" name="valor3" value="20.000" id="opcao45" onclick="calcularValor()">
+                        <label for="opcao45">Turbo</label>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div id="contaier-right">
+            <form id="form5">
+                <fieldset>
+                    <legend>Reparo</legend>
+                    <input type="checkbox" name="valor3" value="500" id="opcao9" onclick="calcularValor()">
+                    <label for="opcao9">Reparo (Não Cobrar Se O Cliente Modificar O Veiculo)</label>
+
+                </fieldset> 
+            </form>
+            <form>
+                <fieldset class="container-buttons">
+                    <label for="resultado">Valor Total:</label><br>
+                    <input class="value-input" type="text" id="resultado" value="0" readonly>
+                    <button type="button" onclick="aplicarDesconto5()">5% DE DESCONTO</button>
+                    <button type="button" onclick="aplicarDesconto10()">10% DE DESCONTO</button>
+                    <button type="button" onclick="aplicarDesconto20()">20% DE DESCONTO(APENAS PARCERIA)</button>
+                    <button type="button" onclick="limparTudo()">LIMPAR RESULTADOS</button>
+                </fieldset>
+          </form>
+        </div>
+    </div>
+
+    <script>
+        function limparTudo() {
+
+            document.getElementById("resultado").value = "";
+
+            var checkboxes = document.getElementsByName("valor3");
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = false;
+                checkboxes[i].disabled = false; 
+            }
+            const fullTuningCheckbox = document.getElementById('tuning');
+            fullTuningCheckbox.checked = false;
+        }
+
+        function aplicarDesconto5() {
+            const resultadoInput = document.getElementById("resultado");
+            const valorAtual = parseFloat(resultadoInput.value.replace("R$", "").replace(/\./g, "").replace(",", "."));
+            let valorDescontado;
+
+            valorDescontado = valorAtual - (valorAtual * (5 / 100));
+            resultadoInput.value = "R$" + valorDescontado.toLocaleString('pt-BR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+        }
+
+        function aplicarDesconto10() {
+            const resultadoInput = document.getElementById("resultado");
+            const valorAtual = parseFloat(resultadoInput.value.replace("R$", "").replace(/\./g, "").replace(",", "."));
+            let valorDescontado;
+
+            valorDescontado = valorAtual - (valorAtual * (10 / 100));
+            resultadoInput.value = "R$" + valorDescontado.toLocaleString('pt-BR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+
+        }
+
+        function aplicarDesconto20() {
+            const resultadoInput = document.getElementById("resultado");
+            const valorAtual = parseFloat(resultadoInput.value.replace("R$", "").replace(/\./g, "").replace(",", "."));
+            let valorDescontado;
+
+            if (valorAtual >= 200.000){
+
+                valorDescontado = valorAtual - (valorAtual * (20 / 100));
+                resultadoInput.value = "R$" + valorDescontado.toLocaleString('pt-BR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });}
+            else{
+                    alert("❌ O desconto de 20% só pode ser aplicado para valores acima de R$ 200.000,00.")
+                }
+        }
+
+        function calcularValor() {
+            const inputs = document.querySelectorAll('input[type="checkbox"]');
+            const resultado = document.querySelector('#resultado');
+            let soma = 0;
+            inputs.forEach(input => {
+                if (input.checked) {
+                    soma += parseFloat(input.value);
+                }
+            });
+            resultado.value = 'R$ ' + soma.toLocaleString('pt-BR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+        }
+
+        function togglePerformanceOptions() {
+            const fullTuningCheckbox = document.getElementById('tuning');
+            const performanceCheckboxes = document.querySelectorAll('.performance');
+
+            performanceCheckboxes.forEach(cb => {
+                const label = document.querySelector(`label[for="${cb.id}"]`);
+                if (fullTuningCheckbox.checked) {
+                    cb.checked = false;
+                    cb.disabled = true;
+                    if (label) label.classList.add('disabled-label');
+                } else {
+                    cb.disabled = false;
+                    if (label) label.classList.remove('disabled-label');
+                }
+            });
+
+            calcularValor();
+        }
+
+        // opções desabilitadas de fabrica
+
+        const disabledOptions = ['opcao41','capo'];
+        disabledOptions.forEach(id => {
+            const checkbox = document.getElementById(id);
+            if (checkbox) {
+                checkbox.checked = false;
+                checkbox.disabled = true;
+                const label = document.querySelector(`label[for="${id}"]`);
+                if (label) label.classList.add('disabled-label');
+            }
+        });
+
+        document.getElementById('tuning').addEventListener('change', togglePerformanceOptions);
+        togglePerformanceOptions();
+    </script>
+
+    <footer class="footer-links">
+        <a href="https://discord.gg/samparp" target="_blank">🗨️ SAMPA RP</a>
+        <span>|</span>
+        <a href="https://alphafoxbots.com" target="_blank">🦊 AlphaFoxBots</a>
+    </footer>
+
+</body>
+
+</html>
+
+

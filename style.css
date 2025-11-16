@@ -1,0 +1,199 @@
+body {
+    overflow: hidden;
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    background: url(./img/FundoSite_Oficial.png);
+    background-size: cover;
+
+    overflow: auto;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 10px;
+    ;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#container-center {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: red; 
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:checked {
+    outline: 2px solid red;
+    box-shadow: 0 0 5px red;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    font-size: 2em; 
+    text-align: center;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+
+.value-input {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.container-buttons button {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    background-color: #ff7037;
+
+
+}
+
+.container-buttons-parceria button {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    background-color: #e70909;
+
+
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .container-form {
+        flex-direction: column;
+    }
+}
+
+input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: #999999;
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.disabled-label {
+    color: #999999;
+    cursor: not-allowed;
+    user-select: none;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: red;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:checked {
+    outline: 2px solid red;
+    box-shadow: 0 0 5px red;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container-buttons button:hover {
+    background-color: #e05520;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.checkbox-box {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-links a {
+    color: #ff7037;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: #ffffff;
+    margin: 0 5px;
+}
