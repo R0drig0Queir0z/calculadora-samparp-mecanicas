@@ -12,7 +12,7 @@ body {
 
     position: relative;
 
-    background: url(./img/FundoSite_Oficial.png);
+    background: url(./img/FundoSite_Oficial.png) no-repeat center center fixed;
     background-size: cover;
 
     overflow: auto;
